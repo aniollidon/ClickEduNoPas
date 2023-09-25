@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "ClickEduNOPAS",
+    "version": "1.0",
+    "description": "Insereix automàticament el fixer de pas al ClickEdu a l'Institut Palamós",
+    "permissions": [
+      "activeTab",
+     "storage"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "images/icon48.png",
+        "64": "images/icon64.png",
+        "128": "images/icon128.png"
+      }
+    },
+    "icons": {
+      "48": "images/icon48.png",
+      "64": "images/icon64.png",
+      "128": "images/icon128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://inspalamos.clickedu.eu/user.php?*&google"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
