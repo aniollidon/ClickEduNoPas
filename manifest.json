@@ -21,7 +21,9 @@
     },
     "content_scripts": [
       {
-        "matches": ["https://inspalamos.clickedu.eu/user.php?*&google"],
+        "matches": [
+          "https://inspalamos.clickedu.eu/user.php?*&google",
+          "https://inspalamos.clickedu.eu/user.php?action=doLogin*"],
         "js": ["content.js"]
       }
     ]
